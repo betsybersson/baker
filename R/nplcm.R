@@ -1718,7 +1718,8 @@ nplcm_fit_Reg_discrete_predictor_NoNest <-
     
     filename <- file.path(mcmc_options$bugsmodel.dir, model_bugfile_name)
     writeLines(model_func, filename)
-    
+    writeLines(model_func,"/Users/betsybersson/Documents/bugmodel_out.bug")
+
     in_data <- unique(c(in_data))
     
     # #
@@ -2378,6 +2379,8 @@ nplcm_fit_Reg_NoNest <-
     
     filename <- file.path(mcmc_options$bugsmodel.dir, model_bugfile_name)
     writeLines(model_func, filename)
+    writeLines(model_func,"/Users/betsybersson/Documents/bugmodel_out.bug")
+
     
     # if (length(prior$Eti_prior)>1){
     #   stop("== [baker] Regression model used. Please change `model_options$prior$Eti_prior` 
@@ -3123,6 +3126,7 @@ nplcm_fit_Reg_Nest <- function(data_nplcm,model_options,mcmc_options){
   
   filename <- file.path(mcmc_options$bugsmodel.dir, model_bugfile_name)
   writeLines(model_func, filename)
+  writeLines(model_func,"/Users/betsybersson/Documents/bugmodel_out.bug")
   
   # if (length(prior$Eti_prior)>1){
   #   stop("== [baker] Regression model used. Please change `model_options$prior$Eti_prior` 
