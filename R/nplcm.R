@@ -979,6 +979,7 @@ nplcm_fit_NoReg<-
     
     filename <- file.path(mcmc_options$bugsmodel.dir, model_bugfile_name)
     writeLines(model_func, filename)
+    writeLines(model_func,"/Users/betsybersson/Documents/bugmodel_out.bug")
     #
     # run the model:
     #
